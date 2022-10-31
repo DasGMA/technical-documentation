@@ -1,0 +1,37 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li, p {
+    font-size: 1.6rem;
+}
+
+#main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#main-navigation ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+}

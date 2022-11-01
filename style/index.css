@@ -1,3 +1,10 @@
+:root {
+    --black-color: #242333;
+    --white-color: #fff;
+    --blue-color: #01B0D3;
+    --border-radius: 0.4rem;
+}
+
 *,
 *:after,
 *:before {
@@ -38,14 +45,16 @@ ol {
 li {
     font-size: 2rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
-
-
 
 a:visited {
     color: inherit;
@@ -53,6 +62,13 @@ a:visited {
 
 p {
     font-size: 1.6rem;
+}
+
+.navigation-container {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    position: sticky;
+    top: 0;
 }
 
 #main-navigation {
@@ -68,7 +84,105 @@ p {
     gap: 2rem;
 }
 
-.container {
+#main-navigation ul li {
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+#main-navigation ul li a {
+    padding: 0.5rem 0;
+}
+
+#main-navigation ul li:hover {
+    border-color: var(--blue-color);
+}
+
+#main-navigation ul li.active {
+    border-color: var(--blue-color);
+}
+
+#logo {
     display: flex;
-    padding: 2rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#logo span {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+#burger-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#documentation-container {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+}
+
+#documentation-container aside {
+    width: 100%;
+    max-width: 20rem;
+}
+
+#documentation-container aside nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#documentation-container aside nav ul li {
+    border-bottom: 1px solid gray;
+    transition: all 0.3s;
+}
+
+#documentation-container aside nav ul li a {
+    padding: 2rem 1rem;
+}
+
+#documentation-container aside nav ul li:hover {
+    color: var(--blue-color);
+}
+
+#documentation-container aside nav ul li a span {
+    margin-left: 1rem;
+}
+
+#documentation-container .content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 50rem) {
+    #burger-button {
+        display: unset;
+    }
+
+    #main-navigation ul {
+        display: none;
+    }
+
+    #logo span {
+        font-size: 2rem;
+    }
+
+    #documentation-container aside {
+        width: auto;
+    }
+
+    #documentation-container aside nav ul li a {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    #documentation-container aside nav ul li a span {
+        font-size: 1rem;
+        margin-left: unset;
+        margin-top: 0.5rem;
+    }
 }

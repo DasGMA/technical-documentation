@@ -1,19 +1,35 @@
-import Link from "next/link";
-import Container from "../../layout-components/Container";
+import { useRouter } from "next/router";
+import Logo from "../Logo";
+import MainNavigationLink from "./MainNavigationLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 const pages = ["Home", "Documentation", "Examples"];
 
 const MainNavigation = () => {
+  const history = useRouter();
+
   const renderLinks = pages.map((page) => (
-    <li key={page}>
-      <Link href={page === "Home" ? "/" : page}>{page}</Link>
-    </li>
+    <MainNavigationLink
+      key={page}
+      page={page}
+      active={
+        history.pathname.includes(page.toLocaleLowerCase()) ||
+        (history.pathname === "/" && page === "Home")
+      }
+    />
   ));
+
   return (
-    <nav id="main-navigation" aria-label="Main navigation">
-      <span>LOGO</span>
-      <ul>{renderLinks}</ul>
-    </nav>
+    <div className="navigation-container">
+      <nav id="main-navigation" aria-label="Main navigation">
+        <Logo />
+        <button id="burger-button">
+          <FontAwesomeIcon icon={faBarsStaggered} color="#01B0D3" size="3x" />
+        </button>
+        <ul>{renderLinks}</ul>
+      </nav>
+    </div>
   );
 };
 

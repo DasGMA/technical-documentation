@@ -1,10 +1,16 @@
 import SideNavigationLink from "./SideNavigationLink";
 
-const links = new Array(8).fill("Link");
+const links = [
+  "Introduction",
+  "Pros & Cons",
+  "Required Skills",
+  "Instalation",
+  "Usage",
+];
 
 const SideNavigation = () => {
-  const renderLinks = links.map((link) => (
-    <SideNavigationLink key={(link += 1)} link={link} />
+  const renderLinks = links.map((link, i) => (
+    <SideNavigationLink key={link} link={link} index={i} />
   ));
   return (
     <aside>

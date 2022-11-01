@@ -1,7 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faFlagCheckered,
+  faPersonCircleQuestion,
+  faDownload,
+  faHammer,
+} from "@fortawesome/free-solid-svg-icons";
 
-const SideNavigationLink = ({ link, active }) => {
+const icons = [
+  faFlagCheckered,
+  faPersonCircleQuestion,
+  faHammer,
+  faDownload,
+  faCode,
+];
+
+const SideNavigationLink = ({ link, active, index }) => {
   return (
     <li
       className={
@@ -9,7 +23,7 @@ const SideNavigationLink = ({ link, active }) => {
       }
     >
       <a href="#" className="side-navigation-anchor">
-        <FontAwesomeIcon icon={faCode} />
+        <FontAwesomeIcon icon={icons[index]} />
         <span>{link}</span>
       </a>
     </li>

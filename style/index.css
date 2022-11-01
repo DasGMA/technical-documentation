@@ -3,6 +3,10 @@
     --white-color: #fff;
     --blue-color: #01B0D3;
     --border-radius: 0.4rem;
+    --xl: 153.6rem;
+    --lg: 120rem;
+    --md: 90rem;
+    --sm: 50rem;
 }
 
 *,
@@ -17,25 +21,37 @@ html {
     font-size: 62.5%;
 }
 
-body, #__next {
+body,
+#__next {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-main, footer {
+main {
     padding: 2rem;
     display: flex;
 }
 
-main {
+main  {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
+
+footer .footer-inner {
+    display: flex;
+    max-width: var(--xl);
+    width: 100%;
+    margin: 2rem;
+    justify-content: center;
+}
+
 
 ul,
 ol {
@@ -69,6 +85,8 @@ p {
     color: var(--white-color);
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #main-navigation {
@@ -76,7 +94,9 @@ p {
     align-items: center;
     justify-content: space-between;
     min-height: 6rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    max-width: var(--xl);
+    width: 100%;
 }
 
 #main-navigation ul {
@@ -123,6 +143,7 @@ p {
     display: flex;
     flex: 1;
     gap: 2rem;
+    max-width: var(--xl);
 }
 
 #documentation-container aside {

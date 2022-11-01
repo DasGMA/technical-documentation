@@ -6,9 +6,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <MainNavigation />
+
       <main id="main-doc">
         <Component {...pageProps} />
       </main>
+
       <Footer />
     </>
   );

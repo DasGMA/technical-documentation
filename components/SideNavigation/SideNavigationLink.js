@@ -5,27 +5,28 @@ import {
   faPersonCircleQuestion,
   faDownload,
   faHammer,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const icons = [
   faFlagCheckered,
+  faStar,
   faPersonCircleQuestion,
   faHammer,
   faDownload,
   faCode,
 ];
 
-const SideNavigationLink = ({ link, active, index }) => {
+const SideNavigationLink = ({ link, index }) => {
+  const regexLink = link.replace(/ /g, "_");
+
   return (
-    <li
-      className={
-        active ? "side-navigation-link active" : "side-navigation-link"
-      }
-    >
-      <a href="#" className="side-navigation-anchor">
+    <li>
+      <Link href={`#${regexLink}`}>
         <FontAwesomeIcon icon={icons[index]} />
         <span>{link}</span>
-      </a>
+      </Link>
     </li>
   );
 };

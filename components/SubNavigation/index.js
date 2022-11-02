@@ -1,13 +1,13 @@
 import { links } from "../SideNavigation";
 import SideNavigationLink from "../SideNavigation/SideNavigationLink";
 
-const BottomNavigation = () => {
+const SubNavigation = () => {
   const renderLinks = links.map((link, i) => (
     <SideNavigationLink key={link} link={link} index={i} />
   ));
 
   return (
-    <aside id="bottom-navigation">
+    <aside id="sub-navigation">
       <nav>
         <ul>{renderLinks}</ul>
       </nav>
@@ -15,4 +15,4 @@ const BottomNavigation = () => {
   );
 };
 
-export default BottomNavigation;
+export default SubNavigation;

@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { memo } from "react";
 
-const MainNavigationLink = ({ active, page }) => {
+const MainNavigationLink = ({ active, page, onClick = () => {} }) => {
   return (
-    <li className={active ? "active" : ""}>
+    <li className={active ? "active" : ""} onClick={onClick}>
       <Link href={page === "Home" ? "/" : page.toLocaleLowerCase()}>
         {page}
       </Link>
@@ -10,4 +11,4 @@ const MainNavigationLink = ({ active, page }) => {
   );
 };
 
-export default MainNavigationLink;
+export default memo(MainNavigationLink);

@@ -16,11 +16,13 @@ import {
   faArrowsSplitUpAndLeft,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-
-import Image from "next/image";
-import nextHero from "../assets/images/nexthero.gif";
 import Link from "next/link";
-import BottomNavigation from "../components/BottomPageNavigation";
+import Image from "next/image";
+
+import nextHero from "../assets/images/nexthero.gif";
+import wikipedia from "../assets/images/wikipedia.webp";
+import nj from "../assets/images/nextjs-resource.png";
+import SubNavigation from "../components/SubNavigation";
 
 const Documentation = () => {
   return (
@@ -572,11 +574,44 @@ const Documentation = () => {
             <header>
               <h2>Resources</h2>
             </header>
-            <article></article>
+            <article>
+              <div>
+                <Link
+                  href="https://en.wikipedia.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure>
+                    <Image
+                      src={wikipedia}
+                      alt="Wikipedia"
+                      layout="fill"
+                      className="image"
+                    />
+                  </figure>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href="https://www.nextjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure>
+                    <Image
+                      src={nj}
+                      alt="Nextjs"
+                      layout="fill"
+                      className="image"
+                    />
+                  </figure>
+                </Link>
+              </div>
+            </article>
           </section>
         </div>
       </div>
-      <BottomNavigation />
+      <SubNavigation />
     </>
   );
 };

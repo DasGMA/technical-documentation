@@ -34,20 +34,17 @@ body,
     flex-direction: column;
 }
 
-main {
-    padding: 2rem;
-    display: flex;
-}
-
 main  {
     flex: 1;
     display: flex;
     justify-content: center;
+    padding: 2rem;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    border-top: 1px solid var(--blue-color);
 }
 
 footer .footer-inner {
@@ -56,6 +53,7 @@ footer .footer-inner {
     width: 100%;
     margin: 2rem;
     justify-content: center;
+    font-size: 1.8rem;
 }
 
 pre {
@@ -104,7 +102,7 @@ a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 100%;
+    
 }
 
 a:visited {
@@ -151,21 +149,55 @@ article a:visited {
     gap: 2rem;
 }
 
-#main-navigation ul li {
+#main-navigation ul li,
+#side-main-navigation ul li {
     border-bottom: 2px solid transparent;
     transition: all 0.3s;
 }
 
-#main-navigation ul li a {
+#main-navigation ul li a,
+#side-main-navigation ul li a {
     padding: 0.5rem 0;
 }
 
-#main-navigation ul li:hover {
+#main-navigation ul li:hover,
+#side-main-navigation ul li:hover {
     border-color: var(--blue-color);
 }
 
-#main-navigation ul li.active {
+#main-navigation ul li.active,
+#side-main-navigation ul li.active  {
     border-color: var(--blue-color);
+}
+
+#side-main-navigation ul li {
+    color: var(--dark-white)
+}
+
+.outer-container {
+    position: fixed;
+    top: 9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: flex-end;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}
+
+.outer-container.visible {
+    display: flex;
+}
+
+#side-main-navigation {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-color: var(--blue-color);
+    max-width: max-content;
+    padding: 2rem;
+    background-color: var(--black-color);
+    z-index: 100;
 }
 
 #logo {
@@ -186,12 +218,12 @@ article a:visited {
     cursor: pointer;
 }
 
-#bottom-navigation nav,
-#bottom-navigation nav ul {
+#sub-navigation nav,
+#sub-navigation nav ul {
     display: flex;
 }
 
-#bottom-navigation {
+#sub-navigation {
     position: fixed;
     top: 9rem;
     width: 100%;
@@ -201,28 +233,28 @@ article a:visited {
     border-top: 1px solid var(--blue-color);
 }
 
-#bottom-navigation nav ul {
+#sub-navigation nav ul {
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
 }
 
-#bottom-navigation nav ul li {
+#sub-navigation nav ul li {
     font-size: 1rem;
     cursor: pointer;
     color: var(--dark-white);
     transition: all 0.3s;
 }
 
-#bottom-navigation nav ul li:hover {
+#sub-navigation nav ul li:hover {
     color: var(--blue-color);
 }
 
-#bottom-navigation nav ul li span {
+#sub-navigation nav ul li span {
     margin-top: 0.5rem;
 }
 
-#bottom-navigation nav ul li a {
+#sub-navigation nav ul li a {
     display: flex;
     flex-direction: column;
     width: unset;
@@ -342,19 +374,21 @@ article a:visited {
     margin-bottom: 2rem;
 }
 
+
+
 /* Media queries */
 
 @media screen and (max-width: 90rem) {
     #Features article .cards-container .card {
         width: 31%;
-        height: 30rem;
+        height: 20rem;
     }
 }
 
 @media screen and (max-width: 50rem) {
     #Features article .cards-container .card {
         width: 48%;
-        height: 30rem;
+        height: 20rem;
         padding: 4rem 1rem;
     }
 }
@@ -369,7 +403,7 @@ article a:visited {
         display: none;
     }
 
-    #bottom-navigation {
+    #sub-navigation {
         display: flex;
     }
 }
@@ -377,21 +411,6 @@ article a:visited {
 
 
 @media screen and (max-width: 60rem) {
-    /* h2 {
-        font-size: 3rem;
-    }
-    
-    h3 {
-        font-size: 2rem;
-    }
-    
-    h4 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    } */
 
     #burger-button {
         display: unset;
@@ -405,18 +424,10 @@ article a:visited {
         font-size: 2rem;
     }
 
-    /* #documentation-container aside nav {
-        width: 8rem;
-    } */
-
     #documentation-container aside nav ul li a {
         padding: 1rem;
         flex-direction: column;
     }
-
-    /* #documentation-container aside nav li {
-        font-size: 1rem;
-    } */
 
     #documentation-container aside nav ul li a span {
         margin-left: unset;
@@ -438,7 +449,7 @@ article a:visited {
 @media screen and (max-width: 35rem) {
     #Features article .cards-container .card {
         width: 100%;
-        height: 30rem;
+        height: 20rem;
     }
 
     #Setup article pre,

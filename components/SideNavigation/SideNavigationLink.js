@@ -6,6 +6,7 @@ import {
   faDownload,
   faHammer,
   faStar,
+  faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -16,6 +17,7 @@ const icons = [
   faHammer,
   faDownload,
   faCode,
+  faCircleInfo,
 ];
 
 const SideNavigationLink = ({ link, index }) => {

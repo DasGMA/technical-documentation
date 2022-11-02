@@ -4,7 +4,7 @@ import MainNavigationLink from "./MainNavigationLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
-const pages = ["Home", "Documentation", "Examples"];
+const pages = ["Home", "Documentation"];
 
 const MainNavigation = () => {
   const history = useRouter();

@@ -58,6 +58,11 @@ footer .footer-inner {
     justify-content: center;
 }
 
+pre {
+    display: flex;
+    width: 100%;
+}
+
 figure {
     width: 100%;
 }
@@ -70,17 +75,17 @@ figure .image {
   }
 
 h2 {
-    font-size: 5rem;
+    font-size: 3.75rem;
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 2.125rem;
 }
 
 ul,
@@ -89,7 +94,7 @@ ol {
 }
 
 li {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-decoration: none;
     cursor: pointer;
 }
@@ -107,12 +112,18 @@ a:visited {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin: 2rem 0;
 }
 
 .icon {
     margin-right: 1rem;
+}
+
+article a,
+article a:visited {
+    color: var(--blue-color);
+    display: inline;
 }
 
 .navigation-container {
@@ -175,6 +186,50 @@ p {
     cursor: pointer;
 }
 
+#bottom-navigation nav,
+#bottom-navigation nav ul {
+    display: flex;
+}
+
+#bottom-navigation {
+    position: fixed;
+    top: 9rem;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--black-color);
+    display: none;
+    border-top: 1px solid var(--blue-color);
+}
+
+#bottom-navigation nav ul {
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#bottom-navigation nav ul li {
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--dark-white);
+    transition: all 0.3s;
+}
+
+#bottom-navigation nav ul li:hover {
+    color: var(--blue-color);
+}
+
+#bottom-navigation nav ul li span {
+    margin-top: 0.5rem;
+}
+
+#bottom-navigation nav ul li a {
+    display: flex;
+    flex-direction: column;
+    width: unset;
+   
+    text-align: center;
+}
+
 /* Documentation page styling starts here */
 
 #documentation-container {
@@ -186,21 +241,19 @@ p {
 
 #documentation-container aside {
     width: 100%;
-    min-width: 25rem;
+    max-width: 25rem;
+    min-width: 12rem;
+    position: relative;
 }
 
 #documentation-container aside nav {
-    position: fixed;
-    min-width: inherit;
+    position: sticky;
+    top: 11rem;
 }
 
 #documentation-container aside nav ul {
     display: flex;
     flex-direction: column;
-}
-
-#documentation-container aside nav ul li:first-of-type {
-    border-top: 1px solid gray;
 }
 
 #documentation-container aside nav ul li {
@@ -210,6 +263,7 @@ p {
 
 #documentation-container aside nav ul li a {
     padding: 2rem 1rem;
+    font-size: 1.6rem;
 }
 
 #documentation-container aside nav ul li:hover {
@@ -227,7 +281,6 @@ p {
 
 #documentation-container .content-container .main-section {
     scroll-margin-top: 11rem;
-    min-height: calc(100vh - 11rem);
     margin-bottom: 2rem;
 }
 
@@ -248,7 +301,7 @@ p {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #Features article .cards-container .card {
@@ -268,9 +321,63 @@ p {
     text-align: center;
 }
 
+#Setup article p code,
+#Usage article p code {
+    border: 1px solid lightgray;
+    padding: 0 0.5rem;
+    border-radius: var(--border-radius);
+    font-style: italic;
+    background-color: var(--dark-white);
+    color: inherit;
+    font-size: inherit;
+}
+
+#Setup article pre,
+#Usage article pre {
+    background-color: var(--black-color);
+    color: var(--dark-white);
+    font-size: 1.8rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 90rem) {
+    #Features article .cards-container .card {
+        width: 31%;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    #Features article .cards-container .card {
+        width: 48%;
+        height: 30rem;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width: 52rem) {
+
+    #documentation-container {
+        padding-top: 7rem;
+    }
+
+    #documentation-container aside {
+        display: none;
+    }
+
+    #bottom-navigation {
+        display: flex;
+    }
+}
+
+
 
 @media screen and (max-width: 60rem) {
-    h2 {
+    /* h2 {
         font-size: 3rem;
     }
     
@@ -284,7 +391,7 @@ p {
 
     p {
         font-size: 1.2rem;
-    }
+    } */
 
     #burger-button {
         display: unset;
@@ -298,27 +405,27 @@ p {
         font-size: 2rem;
     }
 
-    #documentation-container aside {
-        width: 100%;
-        min-width: 7rem;
-    }
-
-    #documentation-container aside nav {
+    /* #documentation-container aside nav {
         width: 8rem;
-    }
+    } */
 
     #documentation-container aside nav ul li a {
         padding: 1rem;
         flex-direction: column;
     }
 
-    #documentation-container aside nav li {
+    /* #documentation-container aside nav li {
         font-size: 1rem;
-    }
+    } */
 
     #documentation-container aside nav ul li a span {
         margin-left: unset;
         margin-top: 0.5rem;
+    }
+
+    #Setup article pre,
+    #Usage article pre {
+        font-size: 1.4rem;
     }
 }
 
@@ -328,24 +435,14 @@ p {
     }
 }
 
-@media screen and (max-width: 85rem) {
-    #Features article .cards-container .card {
-        width: 31%;
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width: 60rem) {
-    #Features article .cards-container .card {
-        width: 48%;
-        height: 30rem;
-        padding: 4rem 1rem;
-    }
-}
-
-@media screen and (max-width: 40.5rem) {
+@media screen and (max-width: 35rem) {
     #Features article .cards-container .card {
         width: 100%;
         height: 30rem;
+    }
+
+    #Setup article pre,
+    #Usage article pre {
+        font-size: 1.1rem;
     }
 }

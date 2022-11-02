@@ -1,12 +1,13 @@
 import SideNavigationLink from "./SideNavigationLink";
 
-const links = [
+export const links = [
   "Introduction",
   "Features",
   "Pros & Cons",
   "Skills",
   "Setup",
   "Usage",
+  "Resources",
 ];
 
 const SideNavigation = () => {

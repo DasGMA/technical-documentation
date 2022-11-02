@@ -123,7 +123,8 @@ p {
 }
 
 article a,
-article a:visited {
+article a:visited,
+.homepage a {
     color: var(--blue-color);
     display: inline;
 }
@@ -358,7 +359,8 @@ article a:visited {
 }
 
 #Setup article p code,
-#Usage article p code {
+#Usage article p code,
+.homepage code {
     border: 1px solid lightgray;
     padding: 0 0.5rem;
     border-radius: var(--border-radius);

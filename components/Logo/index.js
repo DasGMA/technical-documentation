@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../../assets/images/nextjs.png";
 
 const Logo = () => {
   return (
-    <div id="logo">
+    <Link id="logo" href="/">
       <Image
         src={logo}
         alt="Next technical documentation"
@@ -13,7 +14,7 @@ const Logo = () => {
       />
 
       <span>Technical Documentation</span>
-    </div>
+    </Link>
   );
 };
 

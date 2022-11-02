@@ -22,7 +22,7 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
 }
@@ -71,6 +71,10 @@ figure .image {
     position: relative !important;
     height: unset !important;
   }
+
+h1 {
+    font-size: 4.3rem;
+}
 
 h2 {
     font-size: 3.75rem;
@@ -396,7 +400,7 @@ article a:visited {
 @media screen and (max-width: 52rem) {
 
     #documentation-container {
-        padding-top: 7rem;
+        padding-top: 9rem;
     }
 
     #documentation-container aside {

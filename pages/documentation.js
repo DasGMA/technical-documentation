@@ -32,7 +32,7 @@ const Documentation = () => {
         <div className="content-container">
           <section id="Introduction" className="main-section">
             <header>
-              <h2>Introduction</h2>
+              <h1>Introduction</h1>
             </header>
             <article>
               <figure>

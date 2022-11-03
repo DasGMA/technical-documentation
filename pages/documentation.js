@@ -137,8 +137,8 @@ const Documentation = () => {
                 Whether you are a business owner, marketer, or developer,
                 leveraging Next JS app development will help you reap various
                 benefits in the long run. But there are also some limitations to
-                this platform that you need to consider. Let’s take a look at
-                them separately.
+                this platform that you need to consider. Let&apos;s take a look
+                at them separately.
               </p>
               <div className="comparison-container">
                 <div className="pros-container">
@@ -152,53 +152,48 @@ const Documentation = () => {
                   </h3>
                   <h4>Better Conversions</h4>
                   <p>
-                    Next JS offers total control over online stores, mobile
-                    applications, websites, or any other digital products. This
-                    positively impacts your sales funnel and helps you increase
-                    the conversion rate
+                    Control over online stores, mobile applications, websites,
+                    or any other digital products is offered by Next JS. This
+                    will help you increase the conversion rate.
                   </p>
                   <h4>Responsiveness and Adaptability</h4>
                   <p>
                     Mobile or web apps built with Next JS possess higher
-                    adaptability and flexibility. They have the potential to
-                    satisfy every screen size. They can resolve multiple user
-                    requests quickly and efficiently.
+                    adaptability and flexibility. They can fit every screen
+                    size. They are able to resolve multiple user requests
+                    quickly and efficiently.
                   </p>
                   <h4>Data Security </h4>
                   <p>
                     The framework successfully delivers static products and
-                    solutions that have no direct connection with the user
-                    information, dependencies, company database, or any other
-                    sensitive data. This ultimately increases the level of data
-                    security.
+                    solutions that have no connection with the user information.
+                    This also makes the data more secure.
                   </p>
                   <h4>Faster Time-to-market</h4>
                   <p>
-                    The predefined components of Next JS quicken the entire app
-                    development process. It helps you plan faster releases while
-                    gathering feedback to invest your time, capital, and effort
-                    in core production areas.
+                    The Next JS quickens the app development process. It helps
+                    you release new products and features more quickly while
+                    getting feedback to use in core production areas.
                   </p>
                   <h4>Omnichannel </h4>
                   <p>
-                    The Next JS applications or websites are easily accessible
-                    from any mobile device. This helps your company to present
-                    and sell products and services across multiple sales
-                    channels worldwide.
+                    Any mobile device can be used to access the Next JS
+                    applications or websites. This helps your company sell
+                    products and services across multiple sales channels around
+                    the world.
                   </p>
                   <h4>On-demand Support</h4>
                   <p>
-                    The Next JS development community is continuously growing to
-                    fulfill the demand for professionals across the industry.
-                    You can easily hire Next JS developers for your project as
-                    and when required.
+                    The Next JS development community is growing to meet the
+                    demand for professionals across the industry. It is easy to
+                    hire Next JS developers for your project.
                   </p>
                   <h4>Custom Experiences</h4>
                   <p>
                     Software development with Next JS delivers custom
-                    experiences. It creates enterprise-grade apps and websites
-                    that act as a key differentiator for businesses and also
-                    optimizes your marketing efforts.
+                    experiences. Easily create enterprise-grade apps and
+                    websites that act as a key differentiator for businesses and
+                    also optimizes marketing efforts.
                   </p>
                 </div>
                 <div className="cons-container">
@@ -212,17 +207,16 @@ const Documentation = () => {
                   </h3>
                   <h4>Build Time</h4>
                   <p>
-                    Next JS is driven by static development which can negatively
-                    impact the build time of your apps and websites. Completing
+                    The Next JS is built with static development, which can make
+                    your apps and websites take longer to build. Completing
                     complex tasks within stipulated timelines will become a
                     triggering issue.
                   </p>
                   <h4>Overhead Costs</h4>
                   <p>
-                    As the framework is unable to render built-in front pages,
-                    it becomes imperative for developers to create the complete
-                    frontend layer from scratch. This leads to uninvited,
-                    additional expenses.
+                    The framework is unable to render built-in front pages, so
+                    it is important for developers to create the complete layer
+                    from scratch. This leads to uninvited, additional expenses.
                   </p>
                   <h4>Built-in State Manager</h4>
                   <p>
@@ -249,10 +243,9 @@ const Documentation = () => {
             <article>
               <p>
                 After understanding the basics, it is time to consider some
-                essential tools and technologies that can help you kickstart
-                your development journey with Next JS. You need to make sure
-                that you along with your team are well acquainted with the
-                below.
+                essential tools and technologies that can help you with
+                development journey with Next JS. You need to make sure that you
+                are well versed in following areas.
               </p>
 
               <h3>HTML/CSS</h3>
@@ -471,22 +464,22 @@ const Documentation = () => {
                   <br />
                   {"  "}return (
                   <br />
-                  {"     "}&#706;li&#707;
+                  {"     "}&lt;li&gt;
                   <br />
-                  {"       "}&#706;Link
-                  href=&#123;`#$&#123;regexLink&#125;`&#125;&#707;
+                  {"       "}&lt;Link
+                  href=&#123;`#$&#123;regexLink&#125;`&#125;&gt;
                   <br />
-                  {"         "}&#706;FontAwesomeIcon
+                  {"         "}&lt;FontAwesomeIcon
                   <br />
                   {"           "}icon=&#123;icons[index]&#125;
                   <br />
-                  {"         "}/&#707;
+                  {"         "}/&gt;
                   <br />
-                  {"         "}&#706;span&#707;&#123;link&#125;&#706;/span&#707;
+                  {"         "}&lt;span&gt;&#123;link&#125;&lt;/span&gt;
                   <br />
-                  {"       "}&#706;/Link&#707;
+                  {"       "}&lt;/Link&gt;
                   <br />
-                  {"     "}&#706;/li&#707;
+                  {"     "}&lt;/li&gt;
                   <br />
                   {"   "});
                   <br />
@@ -532,14 +525,14 @@ const Documentation = () => {
                   <br />
                   {"  "}const renderLinks = links.map((link, i) =&gt; (
                   <br />
-                  {"    "}&#706;SideNavigationLink <br />
+                  {"    "}&lt;SideNavigationLink <br />
                   {"      "}key=&#123;link&#125;
                   <br />
                   {"      "}link=&#123;link&#125;
                   <br />
                   {"      "}index=&#123;i&#125;
                   <br />
-                  {"    "}/&#707;
+                  {"    "}/&gt;
                   <br />
                   {"    "})
                   <br />
@@ -549,16 +542,16 @@ const Documentation = () => {
                   <br />
                   {"  "}return (
                   <br />
-                  {"     "}&#706;aside&#707;
+                  {"     "}&lt;aside&gt;
                   <br />
-                  {"       "}&#706;nav&#707;
+                  {"       "}&lt;nav&gt;
                   <br />
                   {"         "}
-                  &#706;ul&#707;&#123;renderLinks&#125;&#706;/ul&#707;
+                  &lt;ul&gt;&#123;renderLinks&#125;&lt;/ul&gt;
                   <br />
-                  {"       "}&#706;/nav&#707;
+                  {"       "}&lt;/nav&gt;
                   <br />
-                  {"     "}&#706;/aside&#707;
+                  {"     "}&lt;/aside&gt;
                   <br />
                   {"   "});
                   <br />

@@ -510,15 +510,15 @@ const Documentation = () => {
                   <br />
                   const links = [
                   <br />
-                  {"  "} &quot;Introduction &quot;,
+                  {"  "} &quot;Introduction&quot;,
                   <br />
-                  {"  "} &quot;Pros & Cons &quot;,
+                  {"  "} &quot;Pros & Cons&quot;,
                   <br />
-                  {"  "} &quot;Skills &quot;,
+                  {"  "} &quot;Skills&quot;,
                   <br />
-                  {"  "} &quot;Setup &quot;,
+                  {"  "} &quot;Setup&quot;,
                   <br />
-                  {"  "} &quot;Usage &quot;,
+                  {"  "} &quot;Usage&quot;,
                   <br />
                   {"  "} &quot;Resources&quot;
                   <br />

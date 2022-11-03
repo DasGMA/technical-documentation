@@ -353,9 +353,14 @@ article a:visited,
     padding: 4rem 2rem;
 }
 
+#Features article .cards-container .card svg {
+    color: var(--blue-color);
+}
+
 #Features article .cards-container .card h3 {
     font-size: 1.8rem;
     text-align: center;
+    font-style: italic;
 }
 
 #Setup article p code,
@@ -400,6 +405,10 @@ article a:visited,
 }
 
 @media screen and (max-width: 52rem) {
+
+    #documentation-container .content-container .main-section {
+        scroll-margin-top: 17rem;
+    }
 
     #documentation-container {
         padding-top: 9rem;

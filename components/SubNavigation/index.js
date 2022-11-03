@@ -3,7 +3,12 @@ import SideNavigationLink from "../SideNavigation/SideNavigationLink";
 
 const SubNavigation = () => {
   const renderLinks = links.map((link, i) => (
-    <SideNavigationLink key={link} link={link} index={i} />
+    <SideNavigationLink
+      key={link}
+      link={link}
+      index={i}
+      className="just-link"
+    />
   ));
 
   return (

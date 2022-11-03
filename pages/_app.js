@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import MainNavigation from "../components/MainNavigation";
@@ -27,6 +28,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Nextjs | Das Ma &copy; 2022</title>
+      </Head>
       <MainNavigation setSideVisible={setVisible} />
       <SideMainNavigation
         sideMainVisible={sideMainVisible}

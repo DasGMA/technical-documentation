@@ -18,6 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 import nextHero from "../assets/images/nexthero.gif";
 import wikipedia from "../assets/images/wikipedia.webp";
@@ -27,6 +28,10 @@ import SubNavigation from "../components/SubNavigation";
 const Documentation = () => {
   return (
     <>
+      <Head>
+        <title>Nextjs Technical Documentation</title>
+      </Head>
+
       <div id="documentation-container">
         <SideNavigation />
         <div className="content-container">
@@ -77,54 +82,54 @@ const Documentation = () => {
                 you a better overview of its capabilities.
               </p>
               <div className="cards-container">
-                <div className="card">
-                  <FontAwesomeIcon icon={faImage} size="4x" />
+                <li className="card">
+                  <FontAwesomeIcon icon={faImage} size="2x" />
                   <h3>Image Component and Optimization</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faGlobe} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faGlobe} size="2x" />
                   <h3>Internationalized Routing</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faChartPie} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faChartPie} size="2x" />
                   <h3>Dedicated Analytics</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faGears} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faGears} size="2x" />
                   <h3>Zero-configuration</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faDatabase} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faDatabase} size="2x" />
                   <h3>Hybrid Data Fetching</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faBolt} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faBolt} size="2x" />
                   <h3>Incremental Static Regeneration(ISR)</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faT} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faT} size="2x" />
                   <h3>TypeScript Support</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faArrowsRotate} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faArrowsRotate} size="2x" />
                   <h3>Fast Refresh</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faFolderTree} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faFolderTree} size="2x" />
                   <h3>File-system Routing</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faCode} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faCode} size="2x" />
                   <h3>Built-in CSS Support</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faArrowsSplitUpAndLeft} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faArrowsSplitUpAndLeft} size="2x" />
                   <h3>Code-splitting and Bundling</h3>
-                </div>
-                <div className="card">
-                  <FontAwesomeIcon icon={faRoute} size="4x" />
+                </li>
+                <li className="card">
+                  <FontAwesomeIcon icon={faRoute} size="2x" />
                   <h3>API Routes</h3>
-                </div>
+                </li>
               </div>
             </article>
           </section>

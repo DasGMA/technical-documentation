@@ -17,7 +17,10 @@ const SideNavigation = () => {
 
   return (
     <aside>
-      <nav>
+      <nav id="navbar">
+        <header>
+          <h3>Navigation</h3>
+        </header>
         <ul>{renderLinks}</ul>
       </nav>
     </aside>

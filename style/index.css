@@ -138,7 +138,7 @@ article a:visited,
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 9999;
+    z-index: 20;
 }
 
 #main-navigation {

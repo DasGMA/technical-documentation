@@ -8,7 +8,6 @@ import {
   faStar,
   faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 const icons = [
   faFlagCheckered,
@@ -20,15 +19,15 @@ const icons = [
   faCircleInfo,
 ];
 
-const SideNavigationLink = ({ link, index }) => {
+const SideNavigationLink = ({ link, index, className = "nav-link" }) => {
   const regexLink = link.replace(/ /g, "_");
 
   return (
     <li>
-      <Link href={`#${regexLink}`}>
+      <a href={`#${regexLink}`} className={className}>
         <FontAwesomeIcon icon={icons[index]} />
         <span>{link}</span>
-      </Link>
+      </a>
     </li>
   );
 };

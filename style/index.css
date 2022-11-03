@@ -10,6 +10,7 @@
     --lg: 120rem;
     --md: 90rem;
     --sm: 50rem;
+    --box-shadow: rgba(1, 176, 211, 0.16) 0px 3px 6px, rgba(1, 176, 211, 0.23) 0px 3px 6px;
 }
 
 *,
@@ -343,7 +344,7 @@ article a:visited,
 }
 
 #Features article .cards-container .card {
-    border: 1px solid var(--blue-color);
+    border: 1px solid rgba(1, 176, 211, 0.25);
     border-radius: var(--border-radius);
     width: 23.5%;
     height: 30rem;
@@ -352,6 +353,7 @@ article a:visited,
     align-items: center;
     justify-content: space-evenly;
     padding: 4rem 2rem;
+    box-shadow: var(--box-shadow);
 }
 
 #Features article .cards-container .card svg {

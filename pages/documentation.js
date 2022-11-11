@@ -400,11 +400,11 @@ const Documentation = () => {
             </header>
             <article>
               <p>
-                Now we know what is Next.js and what it can do. Let&apos;s tre
+                Now we know what is Next.js and what it can do. Let&apos;s try
                 to create the side navigation as you can see on this website on
                 your left. If you are familiar with JavaScript and React
                 framework, it should be straightforward. Otherwise, I really
-                encourage to read about JavaScript and React.
+                encourage you to read about JavaScript and React.
               </p>
               <p>
                 We will have two components <code>SideNavigation</code> and{" "}

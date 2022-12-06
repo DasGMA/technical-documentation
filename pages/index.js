@@ -15,7 +15,7 @@ export default function Home() {
         <code>FontAwesome</code>.
       </p>
       <p>
-        It is deployed on <code>HEROKU</code>.
+        It is deployed on <code>NETLIFY</code>.
       </p>
       <p>
         You can see code respository on{" "}
